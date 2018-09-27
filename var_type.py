@@ -1,8 +1,10 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 
-# Python中默认的编码格式是 ASCII 格式，在没修改编码格式时无法正确打印汉字，所以在读取中文时会报错。
-# 解决方法为只要在文件开头加入 # -*- coding: UTF-8 -*- 或者 #coding=utf-8 就行了
+# 可更改(mutable)与不可更改(immutable)对象
+# 在 python 中，strings, tuples, 和 numbers 是不可更改的对象，而 list,dict 等则是可以修改的对象。
+# 不可变类型：变量赋值 a=5 后再赋值 a=10，这里实际是新生成一个 int 值对象 10，再让 a 指向它，而 5 被丢弃，不是改变a的值，相当于新生成了a。
+# 可变类型：变量赋值 la=[1,2,3,4] 后再赋值 la[2]=5 则是将 list la 的第三个元素值更改，本身la没有动，只是其内部的一部分值被修改了。
 
 # number
 i = 5
@@ -78,3 +80,21 @@ print tinydict.keys()      # 输出所有键
 print tinydict.values()    # 输出所有值
 for k, v in dict.items():
 	print(k, v)
+
+
+# 全局变量和局部变量
+# 定义在函数内部的变量拥有一个局部作用域，定义在函数外的拥有全局作用域。
+
+# 局部变量只能在其被声明的函数内部访问，而全局变量可以在整个程序范围内访问。调用函数时，所有在函数内声明的变量名称都将被加入到作用
+
+total = 0; # 这是一个全局变量
+# 可写函数说明
+def sum( arg1, arg2 ):
+   #返回2个参数的和."
+   total = arg1 + arg2; # total在这里是局部变量.
+   print "函数内是局部变量 : ", total
+   return total;
+ 
+#调用sum函数
+sum( 10, 20 );
+print "函数外是全局变量 : ", total
