@@ -10,7 +10,7 @@ if name == 'python':         # 判断变量否为'python'
     print 'welcome boss'    # 并输出欢迎信息
 else:
     print name              # 条件不成立时输出变量名称
-
+######################################################################
 # while
 count = 0
 while (count < 9):
@@ -19,7 +19,7 @@ while (count < 9):
  
 print "Good bye!"
 
-# continue 和 break 用法
+# continue 和 break 用法##############################################
  
 i = 1
 while i < 10:   
@@ -34,7 +34,7 @@ while 1:            # 循环条件为1必定成立
     i += 1
     if i > 10:     # 当i大于10时跳出循环
         break
-
+######################################################################
 # forrrrrrrrrrrrrrrrrrrr
 for letter in 'Python':     # 第一个实例
    print '当前字母 :', letter

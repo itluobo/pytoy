@@ -12,7 +12,7 @@ print i
 i = i + 0.5
 print i
 print str(i)
-
+######################################################################
 a = "Hello"
 b = "Python"
  
@@ -38,7 +38,7 @@ print s
 
 print s[1:9]
 print s[10:]
-
+######################################################################
 # list
 l = [ 'runoob', 786 , 2.23, 'john', 70.2 ]
 tinylist = [123, 'john']
@@ -50,7 +50,7 @@ l.append('Runoob')
 print l[2:]           # 输出从第三个开始至列表末尾的所有元素
 print tinylist * 2       # 输出列表两次
 print l + tinylist    # 打印组合的列表
-
+######################################################################
 # 元组 
 # 元组是另一个数据类型，类似于List（列表）。
 # 元组用"()"标识。内部元素用逗号隔开。但是元组不能二次赋值，相当于只读列表。
@@ -63,15 +63,14 @@ print tuple[1:3]          # 输出第二个至第三个的元素
 print tuple[2:]           # 输出从第三个开始至列表末尾的所有元素
 print tinytuple * 2       # 输出元组两次
 print tuple + tinytuple   # 打印组合的元组
-
+######################################################################
 # map
 dict = {}
 dict['one'] = "This is one"
 dict[2] = "This is two"
  
 tinydict = {'name': 'john','code':6734, 'dept': 'sales'}
- 
- 
+
 print dict['one']          # 输出键为'one' 的值
 print dict[2]              # 输出键为 2 的值
 print tinydict             # 输出完整的字典
